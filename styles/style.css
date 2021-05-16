@@ -1,0 +1,210 @@
+@charset "UTF-8";
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #525581;
+  color: white;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+}
+
+/* Styl nagłówka */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* Styl kontenera z logo */
+.logo {
+  position: relative;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  height: 70%;
+}
+
+/* Styl białego koła otaczającego logo */
+.circle {
+  margin-left: 80px;
+  position: relative;
+  height: 100%;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Styl samego logo */
+#logo-img {
+  position: absolute;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 3px solid white;
+  border-radius: 50%;
+  border-style: outset;
+}
+
+/* Styl menu z linkami do podstron */
+.menu {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* Styl pozycjonujący element względem środka kontenera nadrzędnego */
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* Styl głównej sekcji podstrony */
+#main {
+  position: relative;
+  height: 75%;
+  width: 100%;
+}
+
+/* Styl linków w sekcji głównej podstrony */
+.menu a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Styl bloku, w którym znajduje się zdjęcie */
+.image-container {
+  width: 50vw;
+  height: 60vh;
+  background-color: #f8e4ea;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+/* Styl głównego zdjęcia psa */
+#dog-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Styl środkowych przycisków ze strony głównej */
+.buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Styl bloku zawierającego listę z podstrony Breeds */
+.list-container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* Styl listy z podstrony Breeds */
+ul {
+  -webkit-columns: 4;
+          columns: 4;
+}
+
+/* Styl bloku zawierającego środkowe przyciski ze strony głównej */
+a.button {
+  padding-left: 30px;
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.5em 0.5em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Styl po najeździe myszką na przyciski ze strony głównej */
+a:hover {
+  border-color: white;
+  cursor: pointer;
+}
+
+/* Styl bloku z opisem działania strony */
+.description-container {
+  padding-top: 50px;
+  padding-left: 50px;
+  height: 55vh;
+  width: 60vw;
+  float: left;
+  background-color: #4b4f83;
+  border-radius: 10px;
+  border: 5px solid white;
+}
+
+/* Styl linku z opisu działania strony */
+.description-container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Styl odwiedzonego linku z opisu działania strony */
+.description-container a:visited {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

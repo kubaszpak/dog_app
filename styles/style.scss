@@ -1,0 +1,173 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #525581;
+    color: white;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+}
+
+/* Styl nagłówka */
+header {
+    display: flex;
+    height: 25%;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Styl kontenera z logo */
+.logo {
+    position: relative;
+    flex: 4;
+    height: 70%;    
+}
+
+/* Styl białego koła otaczającego logo */
+.circle {
+    // width is set using jquery
+    margin-left: 80px;
+    position: relative;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Styl samego logo */
+#logo-img {
+    position: absolute;
+    height: 80%;
+    object-fit: contain;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-style: outset;
+}
+
+/* Styl menu z linkami do podstron */
+.menu {
+    flex:2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Styl pozycjonujący element względem środka kontenera nadrzędnego */
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Styl głównej sekcji podstrony */
+#main {
+    position: relative;
+    height: 75%;
+    width: 100%;
+}
+
+/* Styl linków w sekcji głównej podstrony */
+.menu a {
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
+/* Styl bloku, w którym znajduje się zdjęcie */ 
+.image-container {
+    width: 50vw;
+    height: 60vh;
+    background-color: #f8e4ea;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
+/* Styl głównego zdjęcia psa */
+#dog-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Styl środkowych przycisków ze strony głównej */
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styl bloku zawierającego listę z podstrony Breeds */
+.list-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Styl listy z podstrony Breeds */
+ul {
+    columns: 4;
+}
+
+/* Styl bloku zawierającego środkowe przyciski ze strony głównej */
+a.button{
+    padding-left: 30px;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.5em 0.5em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
+    transition: all 0.2s;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
+/* Styl po najeździe myszką na przyciski ze strony głównej */
+a:hover{
+    border-color: rgba(255,255,255,1);
+    cursor: pointer; 
+}
+
+/* Styl bloku z opisem działania strony */
+.description-container {
+    padding-top: 50px;
+    padding-left: 50px;
+    height: 55vh;
+    width: 60vw;
+    float: left;
+    background-color: #4b4f83;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+
+/* Styl linku z opisu działania strony */
+.description-container a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Styl odwiedzonego linku z opisu działania strony */
+.description-container a:visited{
+    text-decoration: none;
+    color:black;
+}

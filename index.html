@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <title>Dog App</title>
+</head>
+
+<body>
+    <!--Nagłówek strony-->
+    <header>
+        <!--Logo przenoszące do głównej strony-->
+        <div class="logo">
+            <a class="circle" href="index.html">
+                <img id="logo-img" src="images/dog.png">
+            </a>
+        </div>
+        <!--Menu pozwalające na poruszanie się pomiędzy podstronami-->
+        <div class="menu">
+            <!--Link do strony głównej-->
+            <a id="home-button" href="index.html">
+                Home
+            </a>
+            <!--Link do strony z listą ras-->
+            <a id="list-button" href="breeds.html">
+                Breeds
+            </a>
+            <!--Link do strony z opisem działania-->
+            <a id="about-button" href="about.html">
+                About
+            </a>
+        </div>
+    </header>
+    <!--Główna sekcja strony-->
+    <section id="main">
+        <!--Przyciski pozwalające na kontrolę pojawiania się nowych zdjęć-->
+        <div class="buttons">
+            <a class="button" onclick="startFetchingImages();" style="background-color:#4e9af1">Start</a>
+            <a class="button" onclick="stopFetchingImages();" style="background-color:#9a4ef1">Stop</a>
+        </div>
+        <!--Miejsce w które skrypt generuje nowe zdjęcia-->
+        <div class="center image-container">
+            <img id="dog-image">
+        </div>
+    </section>
+    <!--Funckje uruchamijące okresowe pojawianie się nowych zdjęć oraz odliczające czas odbyty na stronie-->
+    <script>startFetchingImages();</script>
+    <script>addReminderToWork();</script>
+</body>
+
+</html>
