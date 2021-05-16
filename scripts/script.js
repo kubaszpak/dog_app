@@ -45,7 +45,7 @@ const stopFetchingImages = () => {
 // funkcja przypominająca o powrocie do pracy, jeśli użytkownik zapatrzy się na zdjęcia na zbyt długo
 const addReminderToWork = () => {
     setTimeout(() => {
-        alert("Każdy wie że pieski są super, ale może powinieneś wrócić już do pracy, siedzisz już tak od minuty")
+        alert("Everybody knows that dogs are great and all, but maybe you shold go back to work, you've been sitting like this for over a minute now :)")
     }, 60000)
 }
 
@@ -63,4 +63,11 @@ const fetchBreedList = () => {
                 }
             }
         });
+}
+
+// funkcja dodająca eventListenery do przycisków na stronie głównej
+const addEventListeners = () => {
+    document.getElementById("button-start").addEventListener("click", startFetchingImages);
+    document.getElementById("button-stop").addEventListener("click", stopFetchingImages);
+
 }

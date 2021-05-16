@@ -22,7 +22,7 @@
         <!--Logo przenoszące do głównej strony-->
         <div class="logo">
             <a class="circle" href="index.html">
-                <img id="logo-img" src="images/dog.png">
+                <img id="logo-img" src="images/dog.png" alt="Dog Logo">
             </a>
         </div>
         <!--Menu pozwalające na poruszanie się pomiędzy podstronami-->
@@ -45,17 +45,18 @@
     <section id="main">
         <!--Przyciski pozwalające na kontrolę pojawiania się nowych zdjęć-->
         <div class="buttons">
-            <a class="button" onclick="startFetchingImages();" style="background-color:#4e9af1">Start</a>
-            <a class="button" onclick="stopFetchingImages();" style="background-color:#9a4ef1">Stop</a>
+            <a class="button" id="button-start" style="background-color:#4e9af1">Start</a>
+            <a class="button" id="button-stop" style="background-color:#9a4ef1">Stop</a>
         </div>
         <!--Miejsce w które skrypt generuje nowe zdjęcia-->
         <div class="center image-container">
-            <img id="dog-image">
+            <img id="dog-image" alt="Random Dog Image">
         </div>
     </section>
     <!--Funckje uruchamijące okresowe pojawianie się nowych zdjęć oraz odliczające czas odbyty na stronie-->
     <script>startFetchingImages();</script>
     <script>addReminderToWork();</script>
+    <script>addEventListeners();</script>
 </body>
 
 </html>
