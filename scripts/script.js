@@ -9,6 +9,16 @@ function changeCircleSize() {
     });
 }
 
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function changeResponsive() {
+    var x = document.getElementById("top-nav");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+}
+
 // wywołanie funkcji changeCircleSize w momencie załadowania strony i przy każdej zmianie rozmiaru okna
 $(document).ready(changeCircleSize)
 $(window).on('resize', changeCircleSize)

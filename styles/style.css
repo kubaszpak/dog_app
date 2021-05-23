@@ -207,4 +207,52 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+
+/* Hide the link that should open and close the topnav on small screens */
+.menu .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .menu a {
+    display: none;
+  }
+  .menu a.icon {
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .menu.responsive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu.responsive a {
+    display: block;
+  }
+  .menu.responsive a.icon {
+    margin-bottom: 20px;
+  }
+  .image-container {
+    width: 80vw;
+    height: 40vh;
+  }
+  .buttons {
+    margin-bottom: 3rem;
+  }
+  .logo {
+    height: 40%;
+    margin-left: 0;
+  }
+  .circle {
+    margin-left: 40px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
