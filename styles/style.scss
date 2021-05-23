@@ -174,7 +174,14 @@ a:hover{
 /* Hide the link that should open and close the topnav on small screens */
 .menu .icon {
     display: none;
-  }
+}
+
+.mid {
+    margin-top :5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -214,5 +221,14 @@ a:hover{
 
     ul {
         columns: 1;
+    }
+
+    .description-container{
+        width: 80vw;
+        padding: 25px;
+    }
+
+    .mid {
+        margin-top: 3.5rem;
     }
   }
