@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,600&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
     <link rel="icon" type="image/png" href="images/dog.png" />
@@ -19,18 +20,26 @@
 <body>
     <!--Nagłówek strony (identyczny jak na stronie głównej)-->
     <header>
+        <!--Logo przenoszące do głównej strony-->
         <div class="logo">
             <a class="circle" href="index.html">
                 <img id="logo-img" src="images/dog.png" alt="Dog Logo">
             </a>
         </div>
-        <div class="menu">
+        <!--Menu pozwalające na poruszanie się pomiędzy podstronami-->
+        <div class="menu" id="top-nav">
+            <!--Link do strony głównej-->
+            <a href="javascript:void(0);" class="icon" onclick="changeResponsive()">
+                <i class="fa fa-bars"></i>
+            </a>
             <a id="home-button" href="index.html">
                 Home
             </a>
+            <!--Link do strony z listą ras-->
             <a id="list-button" href="breeds.html">
                 Breeds
             </a>
+            <!--Link do strony z opisem działania-->
             <a id="about-button" href="about.html">
                 About
             </a>

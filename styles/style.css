@@ -186,9 +186,8 @@ a:hover {
 
 /* Styl bloku z opisem działania strony */
 .description-container {
-  padding-top: 50px;
-  padding-left: 50px;
-  height: 55vh;
+  padding: 50px;
+  height: auto;
   width: 60vw;
   float: left;
   background-color: #4b4f83;
@@ -253,6 +252,10 @@ a:hover {
   }
   .circle {
     margin-left: 40px;
+  }
+  ul {
+    -webkit-columns: 1;
+            columns: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
